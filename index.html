@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <!-- Include Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="splide" id="image-slider">
+            <div class="splide__track">
+                <ul class="splide__list" id="slider-content">
+                    <!-- Slides will be inserted here -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dropdown for Text Position -->
+        <div class="dropdown">
+            <label for="position-select">Choose the text Position:</label>
+            <select id="position-select" onchange="updatePosition()">
+                <option value="middle-center">Middle Center</option>
+                <option value="top-left">Top Left</option>
+                <option value="top-center">Top Center</option>
+                <option value="top-right">Top Right</option>
+                <option value="middle-left">Middle Left</option>
+                <option value="middle-right">Middle Right</option>
+                <option value="bottom-left">Bottom Left</option>
+                <option value="bottom-center">Bottom Center</option>
+                <option value="bottom-right">Bottom Right</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Include Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
